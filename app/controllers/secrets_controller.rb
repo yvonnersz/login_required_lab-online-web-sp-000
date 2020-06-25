@@ -10,6 +10,6 @@ class SecretsController < ApplicationController
   private
 
   def require_login
-    return head(:forbidden) unless current_user
+    return head(:forbidden) unless session.include? :name
   end
 end
