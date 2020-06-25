@@ -4,6 +4,6 @@ class SecretsController < ApplicationController
       "shh this is a secret"
     else
       redirect_to login_path
-  end
+    end
   end
 end
