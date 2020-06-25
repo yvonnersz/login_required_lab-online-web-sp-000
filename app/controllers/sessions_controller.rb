@@ -11,8 +11,6 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    if !params[:name].present?
-      session[:name] == nil
-    end
+    session[:name] = nil
   end
 end
