@@ -3,6 +3,6 @@ class SecretsController < ApplicationController
     if require_login
       "hi"
     else
-    redirect_to '/sessions/new'
+      redirect_to '/sessions/new'
   end
 end
