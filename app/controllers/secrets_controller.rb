@@ -4,5 +4,6 @@ class SecretsController < ApplicationController
       "hi"
     else
       redirect_to '/sessions/new'
+    end
   end
 end
