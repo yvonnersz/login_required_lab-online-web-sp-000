@@ -4,5 +4,7 @@ class SessionsController < ApplicationController
 
   def create
     if !params[:username].present?
+      redirect_to login_path
+    end
   end
 end
