@@ -3,7 +3,7 @@ class SecretsController < ApplicationController
     if current_user.present?
       "hi"
     else
-    redirect_to '/sessions/new'
+      redirect_to '/sessions/new'
   end
   end
 end
