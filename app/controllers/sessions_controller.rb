@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
     if !params[:username].present?
       redirect_to login_path
     else
-      session[:name] = params[:username]
+      session[:name] = params[:name]
     end
   end
 end
