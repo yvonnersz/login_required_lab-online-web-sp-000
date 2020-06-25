@@ -1,7 +1,7 @@
 class SecretsController < ApplicationController
   def show
     if current_user.present?
-      "shh this is a secret"
+      render :show
     else
       redirect_to login_path
     end
